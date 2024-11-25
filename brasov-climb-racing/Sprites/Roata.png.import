@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt05su0qpd5vc"
-path="res://.godot/imported/masina fata.png-72694405a8258d811777d262eff4c928.ctex"
+uid="uid://cy2jyigfwodvf"
+path="res://.godot/imported/Roata.png-18d6158d1dcbc06bf09483a3bb894d5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://masina fata.png"
-dest_files=["res://.godot/imported/masina fata.png-72694405a8258d811777d262eff4c928.ctex"]
+source_file="res://Sprites/Roata.png"
+dest_files=["res://.godot/imported/Roata.png-18d6158d1dcbc06bf09483a3bb894d5b.ctex"]
 
 [params]
 
