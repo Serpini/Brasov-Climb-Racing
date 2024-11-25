@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy2jyigfwodvf"
-path="res://.godot/imported/Roata.png-8f80b9e2da414a9c9dce1bdfbe7dd098.ctex"
+uid="uid://wpbp4dp7g8og"
+path="res://.godot/imported/スクリーンショット_2024-11-25_210851-removebg-preview.png-ee7c23f2d0b46ea23f1c371e10238040.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Roata.png"
-dest_files=["res://.godot/imported/Roata.png-8f80b9e2da414a9c9dce1bdfbe7dd098.ctex"]
+source_file="res://Sprites/スクリーンショット_2024-11-25_210851-removebg-preview.png"
+dest_files=["res://.godot/imported/スクリーンショット_2024-11-25_210851-removebg-preview.png-ee7c23f2d0b46ea23f1c371e10238040.ctex"]
 
 [params]
 
