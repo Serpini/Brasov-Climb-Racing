@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://scenes/Global.cs"
-UI="*res://scenes/ui.tscn"
+UI="*res://ui.tscn"
 
 [dotnet]
 
