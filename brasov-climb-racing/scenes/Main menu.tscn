@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://frxh7b30wd5j"]
+[gd_scene load_steps=4 format=3 uid="uid://frxh7b30wd5j"]
 
+[ext_resource type="Script" path="res://scenes/MainMenu.cs" id="1_cxfhh"]
 [ext_resource type="Texture2D" uid="uid://bnpw21exhjtr4" path="res://main-bg.png" id="1_mg5x4"]
+
+[sub_resource type="Theme" id="Theme_s5w2g"]
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,45 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -542.0
-offset_top = -282.0
-offset_right = 540.0
-offset_bottom = 275.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 8
-theme_override_constants/separation = 23
-alignment = 1
-
-[node name="Joaca" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(300, 100)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "JOACA!"
-
-[node name="Setari" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 80)
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Setari"
-
-[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 80)
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Credits"
+script = ExtResource("1_cxfhh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
@@ -55,3 +21,37 @@ layout_mode = 2
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_mg5x4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 293.0
+offset_right = 334.0
+offset_bottom = 599.0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_constants/separation = 23
+alignment = 1
+
+[node name="Joaca" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme = SubResource("Theme_s5w2g")
+theme_override_font_sizes/font_size = 30
+text = "JOACA!"
+
+[node name="Setari" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_s5w2g")
+theme_override_font_sizes/font_size = 20
+text = "Setari"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_s5w2g")
+theme_override_font_sizes/font_size = 20
+text = "Credits"
+
+[connection signal="pressed" from="VBoxContainer/Joaca" to="." method="OnJoacaPressed"]
