@@ -11,7 +11,7 @@ polygon = PackedVector2Array(-2957, 229, 1679, 923, 6965, 833, 11359, 289, 12447
 
 [node name="Player" parent="." instance=ExtResource("1_5m1b6")]
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera" type="Camera2D" parent="Player"]
 position = Vector2(1107, 17)
 offset = Vector2(400, 0)
 zoom = Vector2(0.23, 0.23)
