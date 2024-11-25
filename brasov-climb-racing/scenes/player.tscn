@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://6u4k0c11ahwb" path="res://scenes/roata.tscn" id="1_p740t"]
 [ext_resource type="Script" path="res://Code/player.gd" id="1_qpos2"]
-[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://Sprites/masina fata.png" id="2_4hb02"]
-[ext_resource type="AudioStream" uid="uid://b1sqr88s50a3k" path="res://Sound Effects/Car Engines - Game Audio Asset Preview-[AudioTrimmer.com].mp3" id="4_sd3y0"]
+[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://masina fata.png" id="2_4hb02"]
+[ext_resource type="AudioStream" uid="uid://b1sqr88s50a3k" path="res://Car Engines - Game Audio Asset Preview-[AudioTrimmer.com].mp3" id="4_sd3y0"]
 
 [node name="masina" type="RigidBody2D" groups=["Player"]]
 mass = 18.5

@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ljf5ybeyooqg"]
+[gd_scene load_steps=2 format=3 uid="uid://ljf5ybeyooqg"]
 
 [ext_resource type="PackedScene" uid="uid://cx5f1qpn1sga6" path="res://scenes/player.tscn" id="1_5m1b6"]
-[ext_resource type="PackedScene" uid="uid://b6m8ohmoj5d1p" path="res://scenes/Coin.tscn" id="2_fhk34"]
 
 [node name="Level" type="Node2D"]
 
@@ -23,7 +22,3 @@ drag_horizontal_offset = 1.0
 drag_left_margin = 0.13
 drag_right_margin = 0.08
 editor_draw_drag_margin = true
-
-[node name="coin" parent="." instance=ExtResource("2_fhk34")]
-position = Vector2(2371, 509)
-metadata/_edit_group_ = true
