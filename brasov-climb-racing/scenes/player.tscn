@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cx5f1qpn1sga6"]
+
+[ext_resource type="PackedScene" uid="uid://6u4k0c11ahwb" path="res://scenes/roata.tscn" id="1_p740t"]
+[ext_resource type="Script" path="res://Code/player.gd" id="1_qpos2"]
+[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://masina fata.png" id="2_4hb02"]
+[ext_resource type="AudioStream" uid="uid://b1sqr88s50a3k" path="res://Car Engines - Game Audio Asset Preview-[AudioTrimmer.com].mp3" id="4_sd3y0"]
+
+[node name="masina" type="RigidBody2D" groups=["Player"]]
+mass = 18.5
+gravity_scale = 2.0
+script = ExtResource("1_qpos2")
+
+[node name="suspensie fata" type="PinJoint2D" parent="."]
+position = Vector2(456, 257)
+node_a = NodePath("..")
+node_b = NodePath("Roata")
+softness = 0.5
+
+[node name="Roata" parent="suspensie fata" instance=ExtResource("1_p740t")]
+gravity_scale = 4.319
+
+[node name="suspensie spate" type="PinJoint2D" parent="."]
+position = Vector2(-420, 257)
+node_a = NodePath("..")
+node_b = NodePath("Roata")
+softness = 0.5
+
+[node name="Roata" parent="suspensie spate" instance=ExtResource("1_p740t")]
+gravity_scale = 4.319
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_4hb02")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-551, 242, 609, 263, 675, 201, 637, 98, 329, 41, 71, -99, -514, -95, -662, 59, -653, 228)
+
+[node name="motor_fx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_sd3y0")
+volume_db = -80.0
+autoplay = true
+parameters/looping = true
