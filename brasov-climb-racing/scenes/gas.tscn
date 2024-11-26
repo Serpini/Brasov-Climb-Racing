@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://vwg3f3vq61xb"]
+
+[ext_resource type="Texture2D" uid="uid://bdxkyr11yhnk5" path="res://Sprites/スクリーンショット_2024-11-26_195713-removebg-preview.png" id="1_j8mdr"]
+[ext_resource type="Script" path="res://Code/gas.gd" id="1_n801t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vy6e1"]
+size = Vector2(69, 84)
+
+[node name="Gas" type="Area2D"]
+script = ExtResource("1_n801t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.14, 0.2)
+texture = ExtResource("1_j8mdr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -1)
+shape = SubResource("RectangleShape2D_vy6e1")
