@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://buay5iwntifud"]
+
+[ext_resource type="Script" path="res://Code/level.gd" id="1_lb7n4"]
+[ext_resource type="PackedScene" uid="uid://cx5f1qpn1sga6" path="res://scenes/player.tscn" id="2_hsy5l"]
+[ext_resource type="PackedScene" uid="uid://b6m8ohmoj5d1p" path="res://scenes/Coin.tscn" id="3_u3xg4"]
+[ext_resource type="PackedScene" path="res://scenes/gas.tscn" id="4_86g06"]
+[ext_resource type="Texture2D" uid="uid://cvtywl6hh7i8h" path="res://Sprites/3.jpg" id="5_24b3m"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_lb7n4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-2957, 229, 1679, 923, 6965, 833, 11359, 289, 12447, 863, 15716, -302, 15183, 6911, -3511, 7038)
+
+[node name="Player" parent="." instance=ExtResource("2_hsy5l")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(1107, 17)
+offset = Vector2(400, 0)
+zoom = Vector2(0.23, 0.23)
+position_smoothing_enabled = true
+position_smoothing_speed = 60.0
+drag_horizontal_enabled = true
+drag_horizontal_offset = 1.0
+drag_left_margin = 0.13
+drag_right_margin = 0.08
+editor_draw_drag_margin = true
+
+[node name="coin" parent="." instance=ExtResource("3_u3xg4")]
+position = Vector2(2371, 509)
+metadata/_edit_group_ = true
+
+[node name="Gas" parent="." instance=ExtResource("4_86g06")]
+position = Vector2(1504, 515)
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(2360, -193)
+texture = ExtResource("5_24b3m")
+
+[connection signal="body_entered" from="Gas" to="Gas" method="_on_body_entered"]

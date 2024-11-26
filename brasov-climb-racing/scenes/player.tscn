@@ -2,13 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://6u4k0c11ahwb" path="res://scenes/roata.tscn" id="1_p740t"]
 [ext_resource type="Script" path="res://Code/player.gd" id="1_qpos2"]
-[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://Sprites/masina fata (2).png" id="2_4hb02"]
+[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://Sprites/masina fata.png" id="2_4hb02"]
 [ext_resource type="Script" path="res://Code/roata.gd" id="3_pdy1f"]
-[ext_resource type="AudioStream" uid="uid://d1nxvye6qiwqf" path="res://Sound Effects/car-sound-effect-126709 (mp3cut.net).mp3" id="5_tjagj"]
+[ext_resource type="AudioStream" uid="uid://cjfdn7b3wy163" path="res://Sound Effects/diesel-truck-idling-frontwav-14418 (mp3cut.net).mp3" id="5_ygwvc"]
 
 [node name="masina" type="RigidBody2D" groups=["Player"]]
 mass = 18.5
-gravity_scale = 2.0
+gravity_scale = 2.577
 script = ExtResource("1_qpos2")
 
 [node name="suspensie fata" type="PinJoint2D" parent="."]
@@ -38,7 +38,7 @@ texture = ExtResource("2_4hb02")
 polygon = PackedVector2Array(-551, 242, 609, 263, 675, 201, 637, 98, 329, 41, 71, -99, -514, -95, -662, 59, -653, 228)
 
 [node name="motor_fx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_tjagj")
+stream = ExtResource("5_ygwvc")
 volume_db = 1.743
 autoplay = true
 parameters/looping = true

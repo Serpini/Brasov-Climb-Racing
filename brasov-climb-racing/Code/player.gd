@@ -34,9 +34,9 @@ func _physics_process(delta):
 				Roata.apply_torque_impulse(torque * delta * 60)
 		merge =+ 1
 	else:       
-		torque = lerp(torque, 0.0, delta * acceleratie)
+		torque = lerp(torque, 0.0, delta * 50)
 
 	if merge == 1:
-		$motor_fx.pitch_scale = lerp($motor_fx.pitch_scale, 1.5, 2.0 * delta)
+		$motor_fx.pitch_scale = lerp($motor_fx.pitch_scale, 1.3, 2.0 * delta)
 	else:
 		$motor_fx.pitch_scale = lerp($motor_fx.pitch_scale, 1.0, 2.0 * delta)
