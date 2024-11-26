@@ -26,6 +26,10 @@ Pause="*res://scenes/pause.tscn"
 
 project/assembly_name="Brasov climb racing"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
+
 [global_group]
 
 Player=""

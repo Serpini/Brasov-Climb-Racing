@@ -21,6 +21,7 @@ func _ready() -> void:
 
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file(paths[paths_index])
+	ui.show()
 
 func _on_stanga_pressed() -> void:
 	paths_index -= 1
@@ -35,7 +36,7 @@ func _on_dreapta_pressed() -> void:
 func _on_inapoi_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/Main menu.tscn")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if paths_index <=-1:
 		paths_index = paths.size()-1
 	if lvl_num_index <=-1:

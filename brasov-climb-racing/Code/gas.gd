@@ -8,4 +8,8 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	queue_free()
-	bara_benzina.BenzinaAdded()
+	bara_benzina.Benzina_Added()
+
+func _process(delta: float) -> void:
+	if bara_benzina.value <= 0.0:
+		get_tree().change_scene_to_file("res://scenes/Main menu.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://vwg3f3vq61xb"]
+[gd_scene load_steps=4 format=3 uid="uid://b8wm37phgx3ps"]
 
 [ext_resource type="Texture2D" uid="uid://bdxkyr11yhnk5" path="res://Sprites/スクリーンショット_2024-11-26_195713-removebg-preview.png" id="1_j8mdr"]
 [ext_resource type="Script" path="res://Code/gas.gd" id="1_n801t"]

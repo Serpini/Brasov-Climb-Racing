@@ -7,7 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://cjfdn7b3wy163" path="res://Sound Effects/diesel-truck-idling-frontwav-14418 (mp3cut.net).mp3" id="5_ygwvc"]
 
 [node name="masina" type="RigidBody2D" groups=["Player"]]
-mass = 18.5
+mass = 14.22
 gravity_scale = 2.577
 script = ExtResource("1_qpos2")
 
@@ -15,7 +15,7 @@ script = ExtResource("1_qpos2")
 position = Vector2(456, 257)
 node_a = NodePath("..")
 node_b = NodePath("Roata")
-softness = 0.5
+softness = 0.2
 
 [node name="Roata" parent="suspensie fata" instance=ExtResource("1_p740t")]
 gravity_scale = 4.319
@@ -25,7 +25,7 @@ script = ExtResource("3_pdy1f")
 position = Vector2(-420, 257)
 node_a = NodePath("..")
 node_b = NodePath("Roata")
-softness = 0.5
+softness = 0.2
 
 [node name="Roata" parent="suspensie spate" instance=ExtResource("1_p740t")]
 gravity_scale = 4.319
@@ -42,3 +42,15 @@ stream = ExtResource("5_ygwvc")
 volume_db = 1.743
 autoplay = true
 parameters/looping = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1107, 17)
+offset = Vector2(400, 0)
+zoom = Vector2(0.23, 0.23)
+position_smoothing_enabled = true
+position_smoothing_speed = 60.0
+drag_horizontal_enabled = true
+drag_horizontal_offset = 1.0
+drag_left_margin = 0.13
+drag_right_margin = 0.08
+editor_draw_drag_margin = true

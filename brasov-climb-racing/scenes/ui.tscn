@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ckx7lq8rneg7j" path="res://Sprites/romania-5-bani-2020-removebg-preview.png" id="2_h4qnu"]
 [ext_resource type="Texture2D" uid="uid://bnpw21exhjtr4" path="res://Sprites/main-bg.png" id="3_mhh4b"]
 [ext_resource type="Texture2D" uid="uid://cm4xavbqi2pqg" path="res://icon.svg" id="3_v1xxy"]
-[ext_resource type="Script" path="res://scenes/BenzinaBar.cs" id="4_eisg0"]
+[ext_resource type="Script" path="res://Code/benzina_bar.gd" id="5_n7d3m"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_ltj1y")
@@ -40,4 +40,4 @@ stretch_margin_left = 40
 stretch_margin_right = 40
 texture_under = ExtResource("3_mhh4b")
 texture_progress = ExtResource("3_v1xxy")
-script = ExtResource("4_eisg0")
+script = ExtResource("5_n7d3m")
