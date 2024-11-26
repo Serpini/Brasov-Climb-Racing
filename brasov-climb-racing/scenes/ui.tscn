@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://n8cb0d41yt6n"]
 
-[ext_resource type="Script" path="res://Ui.cs" id="1_ltj1y"]
-[ext_resource type="Texture2D" uid="uid://wpbp4dp7g8og" path="res://Sprites/スクリーンショット_2024-11-25_210851-removebg-preview.png" id="2_fnn04"]
+[ext_resource type="Script" path="res://Code/Ui.cs" id="1_ltj1y"]
+[ext_resource type="Texture2D" uid="uid://ckx7lq8rneg7j" path="res://Sprites/romania-5-bani-2020-removebg-preview.png" id="2_h4qnu"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_ltj1y")
@@ -12,7 +12,7 @@ offset_bottom = 40.0
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_fnn04")
+texture = ExtResource("2_h4qnu")
 expand_mode = 2
 
 [node name="CoinScore" type="Label" parent="HBoxContainer"]

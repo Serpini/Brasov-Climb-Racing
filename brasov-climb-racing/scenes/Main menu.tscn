@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://frxh7b30wd5j"]
 
-[ext_resource type="Script" path="res://scenes/MainMenu.cs" id="1_cxfhh"]
-[ext_resource type="Texture2D" uid="uid://bnpw21exhjtr4" path="res://main-bg.png" id="1_mg5x4"]
+[ext_resource type="Script" path="res://Code/MainMenu.cs" id="1_cxfhh"]
+[ext_resource type="Texture2D" uid="uid://bnpw21exhjtr4" path="res://Sprites/main-bg.png" id="1_mg5x4"]
 
 [sub_resource type="Theme" id="Theme_s5w2g"]
 Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnpw21exhjtr4"
-path="res://.godot/imported/main-bg.png-164d523904682a2c0eca1f776605d6dd.ctex"
+uid="uid://ckx7lq8rneg7j"
+path="res://.godot/imported/romania-5-bani-2020-removebg-preview.png-0cf7e0403df4849ab79001892637f482.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main-bg.png"
-dest_files=["res://.godot/imported/main-bg.png-164d523904682a2c0eca1f776605d6dd.ctex"]
+source_file="res://Sprites/romania-5-bani-2020-removebg-preview.png"
+dest_files=["res://.godot/imported/romania-5-bani-2020-removebg-preview.png-0cf7e0403df4849ab79001892637f482.ctex"]
 
 [params]
 

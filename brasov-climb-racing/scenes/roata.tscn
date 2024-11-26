@@ -1,6 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://6u4k0c11ahwb"]
 
-[ext_resource type="Texture2D" uid="uid://cy2jyigfwodvf" path="res://Sprites/Roata.png" id="1_ajneb"]
+[ext_resource type="Texture2D" uid="uid://cy2jyigfwodvf" path="res://Sprites/Roata (2).png" id="1_ajneb"]
+
 
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xoc4n"]

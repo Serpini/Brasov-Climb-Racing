@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://6u4k0c11ahwb" path="res://scenes/roata.tscn" id="1_p740t"]
 [ext_resource type="Script" path="res://Code/player.gd" id="1_qpos2"]
-[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://masina fata.png" id="2_4hb02"]
-[ext_resource type="AudioStream" uid="uid://b1sqr88s50a3k" path="res://Car Engines - Game Audio Asset Preview-[AudioTrimmer.com].mp3" id="4_sd3y0"]
+[ext_resource type="Texture2D" uid="uid://bt05su0qpd5vc" path="res://Sprites/masina fata (2).png" id="2_4hb02"]
+[ext_resource type="AudioStream" uid="uid://b1sqr88s50a3k" path="res://Sound Effects/Car Engines - Game Audio Asset Preview-[AudioTrimmer.com].mp3" id="4_8s3d2"]
 
 [node name="masina" type="RigidBody2D" groups=["Player"]]
 mass = 18.5
@@ -35,7 +35,6 @@ texture = ExtResource("2_4hb02")
 polygon = PackedVector2Array(-551, 242, 609, 263, 675, 201, 637, 98, 329, 41, 71, -99, -514, -95, -662, 59, -653, 228)
 
 [node name="motor_fx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_sd3y0")
-volume_db = -80.0
+stream = ExtResource("4_8s3d2")
+volume_db = -31.05
 autoplay = true
-parameters/looping = true

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt05su0qpd5vc"
-path="res://.godot/imported/masina fata.png-72694405a8258d811777d262eff4c928.ctex"
+path="res://.godot/imported/masina fata (2).png-6099156f78df689c028eeb411b1110fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://masina fata.png"
-dest_files=["res://.godot/imported/masina fata.png-72694405a8258d811777d262eff4c928.ctex"]
+source_file="res://Sprites/masina fata (2).png"
+dest_files=["res://.godot/imported/masina fata (2).png-6099156f78df689c028eeb411b1110fc.ctex"]
 
 [params]
 
