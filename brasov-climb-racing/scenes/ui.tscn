@@ -1,29 +1,29 @@
 [gd_scene load_steps=6 format=3 uid="uid://n8cb0d41yt6n"]
 
-[ext_resource type="Script" path="res://Code/Ui.cs" id="1_ltj1y"]
+[ext_resource type="Script" path="res://Code/ui.gd" id="1_xyvvn"]
 [ext_resource type="Texture2D" uid="uid://ckx7lq8rneg7j" path="res://Sprites/romania-5-bani-2020-removebg-preview.png" id="2_h4qnu"]
 [ext_resource type="Texture2D" uid="uid://bnpw21exhjtr4" path="res://Sprites/main-bg.png" id="3_mhh4b"]
 [ext_resource type="Texture2D" uid="uid://cm4xavbqi2pqg" path="res://icon.svg" id="3_v1xxy"]
 [ext_resource type="Script" path="res://Code/benzina_bar.gd" id="5_n7d3m"]
 
 [node name="UI" type="CanvasLayer"]
-script = ExtResource("1_ltj1y")
+script = ExtResource("1_xyvvn")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="Bani" type="HBoxContainer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Bani"]
 layout_mode = 2
 texture = ExtResource("2_h4qnu")
 expand_mode = 2
 
-[node name="CoinScore" type="Label" parent="HBoxContainer"]
+[node name="CoinScore" type="Label" parent="Bani"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "0"
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Benzina" type="MarginContainer" parent="."]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -31,7 +31,7 @@ offset_top = -90.0
 offset_right = 336.0
 grow_vertical = 0
 
-[node name="BenzinaBar" type="TextureProgressBar" parent="MarginContainer"]
+[node name="BenzinaBar" type="TextureProgressBar" parent="Benzina"]
 layout_mode = 2
 step = 0.0
 value = 100.0
@@ -41,3 +41,46 @@ stretch_margin_right = 40
 texture_under = ExtResource("3_mhh4b")
 texture_progress = ExtResource("3_v1xxy")
 script = ExtResource("5_n7d3m")
+
+[node name="Pause" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.5
+offset_top = -190.0
+offset_right = 165.5
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.5
+offset_top = -127.0
+offset_right = 103.5
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+
+[node name="Resume" type="Button" parent="Pause/VBoxContainer"]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 2
+text = "Resume"
+
+[node name="Main menu" type="Button" parent="Pause/VBoxContainer"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Exit" type="Button" parent="Pause/VBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+text = "Exit game"

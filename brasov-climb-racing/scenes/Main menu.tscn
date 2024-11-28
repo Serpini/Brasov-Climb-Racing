@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://frxh7b30wd5j"]
 
-[ext_resource type="Script" path="res://Code/MainMenu.cs" id="1_cxfhh"]
+[ext_resource type="Script" path="res://Code/main_menu.gd" id="1_7sm7m"]
 [ext_resource type="Texture2D" uid="uid://bnpw21exhjtr4" path="res://Sprites/main-bg.png" id="1_mg5x4"]
 
 [sub_resource type="Theme" id="Theme_s5w2g"]
@@ -13,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_cxfhh")
+script = ExtResource("1_7sm7m")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
@@ -39,6 +39,7 @@ layout_mode = 2
 theme = SubResource("Theme_s5w2g")
 theme_override_font_sizes/font_size = 30
 text = "JOACA!"
+script = ExtResource("1_7sm7m")
 
 [node name="Setari" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 80)
@@ -54,4 +55,4 @@ theme = SubResource("Theme_s5w2g")
 theme_override_font_sizes/font_size = 20
 text = "Credits"
 
-[connection signal="pressed" from="VBoxContainer/Joaca" to="." method="OnJoacaPressed"]
+[connection signal="pressed" from="VBoxContainer/Joaca" to="." method="_on_joaca_pressed"]

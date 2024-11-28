@@ -1,25 +1,28 @@
 extends Control
 
+var bara_pauza
 func _ready() -> void:
-	$CanvasLayer.hide()
+	bara_pauza = Pause.get_node("CanvasLayer")
+	bara_pauza.hide()
 
 func _on_resume_pressed() -> void:
-	Pause.get_node("CanvasLayer").hide()
+	bara_pauza.hide()
 
 func show_pause_menu() ->void:
-	$CanvasLayer.show()
+	bara_pauza.show()
 
 
 
 func _on_main_menu_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/Main menu.tscn")
-	$CanvasLayer.hide()
+	bara_pauza.hide()
 	
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ESC"):
-		if get_tree().current_scene.name == "Main menu.tscn":
-			$CanvasLayer.hide()
-		elif $CanvasLayer.visible == false:
-			$CanvasLayer.hide()
+		print(get_tree().current_scene.name)
+		if get_tree().current_scene.name == "Control":
+			bara_pauza.hide()
+		elif bara_pauza.visible == true:
+			bara_pauza.hide()
 		else:
-			$CanvasLayer.show()
+			bara_pauza.show()

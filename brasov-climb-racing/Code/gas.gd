@@ -1,7 +1,7 @@
 extends Area2D
 
 var cantitate_benzina : float
-var bara_benzina = Ui.get_node("MarginContainer/BenzinaBar")
+var bara_benzina = Ui.get_node("Benzina/BenzinaBar")
 
 func _ready() -> void:
 	cantitate_benzina = bara_benzina.value
